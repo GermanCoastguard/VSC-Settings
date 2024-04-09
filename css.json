@@ -1,0 +1,31 @@
+{
+"cssClass": {
+	"prefix": ".",
+	"body": [
+		".${1:example} {",
+		"${2:example}: ${3:example};",
+		"}"
+	],
+	"description": "cssClass"
+},
+"targetPreviousSiblings": {
+	"prefix": "previousSiblings",
+	"body": [
+		"// target previous Siblings",
+		"${1:parent}:has(${3::hover}) * > :not(${2:target}${3::hover} ~ ${2:target}) {",
+		"    ${4:background-color}: ${5:hsla(0, 0%, 27%, 1)};",
+		"}"
+	],
+	"description": "targetPreviousSiblings"
+},
+"targetNextSiblings": {
+	"prefix": "nextSiblings",
+	"body": [
+		"// target following siblings",
+		"${1:parent} > * > ${2:target}${3::hover} ~ ${2:target} {",
+		"   ${4:background-color}: ${5:hsla(0, 0%, 27%, 1)};",
+		"}"
+	],
+	"description": "targetNextSiblings"
+},
+}
