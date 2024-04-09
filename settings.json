@@ -1,0 +1,43 @@
+{
+    "terminal.integrated.env.windows": {},
+    "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+        "live-preview-extension": true
+    },
+    "console-ninja.featureSet": "Community",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "console-ninja.fontSize": 14,
+    "console-ninja.captureFunctions": true,
+    "console-ninja.allowedHosts": [
+        "localhost, 127.0.0.1:5500"
+    ],
+    "window.confirmBeforeClose": "always",
+    
+    "workbench.sideBar.location": "left", // left === default , options ["right", ]
+    
+    // sets of font-size, letter-spacing, font-family
+    // "editor.lineHeight": 1.5,
+    // favourites
+    // "editor.fontFamily": "Calisto MT",        "editor.fontSize": 17,       "editor.letterSpacing": 1, "editor.lineHeight": 1.2,
+    // "editor.fontFamily": "Tahoma",  "editor.fontSize": 16,       "editor.letterSpacing": 0.8,
+    // "editor.fontFamily": "Segoe UI", "editor.fontSize": 16.4,       "editor.letterSpacing": 0.4,
+    // "editor.fontFamily": "Trebuchet MS",  "editor.fontSize": 16,       "editor.letterSpacing": 0.8,
+    // "editor.fontFamily": "Times New Roman", "editor.fontSize": 16,       "editor.letterSpacing": 0.6, "editor.lineHeight": 1.05,
+    
+    // "editor.fontFamily": "Franklin Gothic",  "editor.fontSize": 16.4,       "editor.letterSpacing": 0.3,
+                // "editor.fontFamily": "Bodoni MT", "editor.fontSize": 17.7,       "editor.letterSpacing": 1.2, "editor.lineHeight": 1.1,
+
+        // "editor.fontFamily": "Lucida Sans Unicode",  "editor.fontSize": 16,       "editor.letterSpacing": 0.8,
+
+        //   /*  "editor.fontFamily": "default",  */       "editor.fontSize": 14.5,     "editor.letterSpacing": 0.4,
+            //   "editor.fontFamily": "Verdana",           "editor.fontSize": 15.5,       "editor.letterSpacing": 0.6,
+
+            // "editor.fontFamily": "Comic Sans MS",    "editor.fontSize": 18.5,       "editor.letterSpacing": 1,
+            // "editor.fontFamily": "Century Gothic",  "editor.fontSize": 16,       "editor.letterSpacing": 1, "editor.lineHeight": 1.1,
+            // "editor.fontFamily": "Century Schoolbook",  "editor.fontSize": 15.4,       "editor.letterSpacing": 0.4, "editor.lineHeight": 1.22,
+
+        //  console
+            "terminal.integrated.fontSize": 16,
+            "terminal.integrated.fontFamily": "JetBrains Mono",
+
+    
+}
