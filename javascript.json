@@ -70,8 +70,15 @@
 	],
 	"description": "attributeChangedCallback"
 },
+"consoleLog": {
+	"prefix": "cl",
+	"body": [
+		"console.log(${1:example});"
+	],
+	"description": "consoleLog"
+},
 "logString": {
-	"prefix": "logString",
+	"prefix": "cls",
 	"body": [
 		"console.log(`",
 		"  ",
@@ -80,5 +87,85 @@
 		"`);"
 	],
 	"description": "logString"
+},
+"arrayItem": {
+	"prefix": "arritem","body": [
+		"\"${1:example}\","
+	],
+	"description": "arrayItem"
+},
+"keyValueObject": {
+	"prefix": "kv",
+	"body": [
+		"{",
+		"  ${1:key}: ${2:value},",
+		"},"
+	],
+	"description": "object"
+},
+"tpObject": {
+	"prefix": "tpobj",
+	"body": [
+		"{",
+		"  title: \"${1:value}\",",
+		"  properties: {",
+		"      ${2:prop}: ${3:val},",
+		"    }",
+		"},"
+	],
+	"description": "object"
+},
+"tipObject": {
+	"prefix": "tippObj",
+	"body": [
+		"{",
+		"  title: \"${1:value}\",",
+		"  items: [${4:}],",
+		"  properties: {",
+		"      ${2:prop}: ${3:val},",
+		"    }",
+		"},"
+	],
+	"description": "tipObject"
+},
+"forEach": {
+	"prefix": "foreach",
+	"body": [
+		"        ${1:array}.forEach((${2:el}) => {",
+		"            ${3:example}",
+		"        });    "
+	],
+	"description": "forEach"
+},
+"arrayForEach": {
+	"prefix": "arrayforeach",
+	"body": [
+		"Array.from(${1:document}.querySelectorAll(${2:example})).forEach((el) => {",
+		"          ${3:example}",
+		"    }",
+		");"
+	],
+	"description": "forEach"
+},
+"addEventListener": {
+	"prefix": "adde",
+	"body": [
+		"addEventListener(\"${1:click}\", (${2:el}) => {",
+		"  ${3:el.}",
+		"});"
+	],
+	"description": "addEventListener"
+},
+"forEntries": {
+
+},
+"forKey": {
+
+},
+"forValue": {
+
+},
+"map": {
+	
 },
 }
