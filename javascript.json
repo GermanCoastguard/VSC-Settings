@@ -2,10 +2,9 @@
 "JSWebComponent": {
 	"prefix": "webC",
 	"body": [
-		"",
-		"     ",
+		"    ",
 		"window.addEventListener(\"click\", () => { ",
-		"                _createAndAppendElementToTargetElement(`[title=\"Skills\"]`, EditButton, \"test-element\");",
+		"                _createAndAppendElementToTargetElement(\"${2:your}-${3:example}\", ${1:ClassName}, \"test-element\");",
 		"});",
 		"",
 		"// Füge Testobjekt einem Ziel zu",
