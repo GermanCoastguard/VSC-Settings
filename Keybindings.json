@@ -36,6 +36,51 @@
         { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor","when": "editorFocus",},
     //open 
         // recently closed Tab
-        { "key": "ctrl+alt+w", "command": "workbench.action.reopenClosedEditor", },
+        {
+            "key": "ctrl+alt+w",
+            "command": "workbench.action.reopenClosedEditor",
+        },
+        {
+            "key": "ctrl+shift+oem_4",
+            "command": "editor.action.outdentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_4",
+            "command": "-editor.action.outdentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_4",
+            "command": "editor.fold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_4",
+            "command": "-editor.fold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_6",
+            "command": "editor.action.indentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_6",
+            "command": "-editor.action.indentLines",
+            "when": "editorTextFocus && !editorReadonly"
+        },
+        {
+            "key": "ctrl+oem_6",
+            "command": "editor.unfold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
+        {
+            "key": "ctrl+shift+oem_6",
+            "command": "-editor.unfold",
+            "when": "editorTextFocus && foldingEnabled"
+        },
 
+            
  ]
+ 
