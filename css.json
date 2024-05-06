@@ -72,13 +72,13 @@
 	"body": [
 		".${1:plan} {",
 		"--_${1:shadow}: var(--${1:shadow}, black);",
-		"--_${2:icon}: var(--${2:icon}, black);,",
+		"--_${2:icon}: var(--${2:icon}, black);",
 		"--_${3:button-hover}: var(--${3:button-hover}, black);",
-		"}",
+		"};",
 		"",
 		".${1:plan}__${2:icon} {",
 		"  fill: var(--_${2:icon});",
-		"}",
+		"};",
 		"",
 		""
 	],
