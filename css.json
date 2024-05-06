@@ -84,7 +84,34 @@
 	],
 	"description": "cssPlanItem"
 },
-
+"centerGrid": {
+	"prefix": "centerGrid",
+	"body": [
+		"display: grid;",
+		"place-items: center;"
+	],
+	"description": "centerGrid"
+},
+"centerFlex": {
+	"prefix": "centerFlex",
+	"body": [
+		"display: flex;",
+		"justify-content: center;",
+		"align-items: center;"
+	],
+	"description": "centerFlex"
+},
+"centerRel": {
+	"prefix": "centerRel",
+	"body": [
+		"/* parent has to be Position Relative */",
+		"position: absolute;",
+		"top: 50%;",
+		"left: 50%;",
+		"transform: translate(-50%, -50%);"
+	],
+	"description": "centerRel"
+},
 
 }
 
