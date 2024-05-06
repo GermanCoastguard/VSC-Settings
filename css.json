@@ -11,7 +11,7 @@
 "targetPreviousSiblings": {
 	"prefix": "previousSiblings",
 	"body": [
-		"// target previous Siblings",
+		"// target previous Siblings + target ",
 		"${1:parent}:has(${3::hover}) * > :not(${2:target}${3::hover} ~ ${2:target}) {",
 		"    ${4:background-color}: ${5:hsla(0, 0%, 27%, 1)};",
 		"}"
@@ -28,4 +28,63 @@
 	],
 	"description": "targetNextSiblings"
 },
+"vertical-expand-grid": {
+	"prefix": "vertical-expand-grid",
+	"body": [
+		".vertical-expand-grid {",
+		"    ${1:outline:1px solid white;}",
+		"    display: grid;",
+		"    grid-template: 1fr / 1fr;",
+		"    transition: grid-template-rows 400ms ease, grid-template-columns 400ms ease;",
+		"    &:hover {",
+		"        grid-template: 0fr / 1fr;",
+		"    }",
+		"    & * {",
+		"        overflow: hidden;",
+		"    }",
+		"}"
+	],
+	"description": "vertical-expand-grid"
+},
+"cssBody": {
+	"prefix": "cssBody",
+	"body": [
+		".body__content-wrapper {",
+		"",
+		"  container: bodyContentWrapper / inline-size;",
+		"",
+		"  --_padding: var(--padding, max(1.5rem, 4%));",
+		"  --_max-width: var(--max-width, 1140px); /* 1140px */",
+		"    width: min(var(--_max-width), 100% - (var(--_padding) * 2));",
+		"    /* ",
+		"    --max-width: ${1:1200px};",
+		"    --padding: ${2:max(1.5rem, 4%)}",
+		"    */                                                         ",
+		"    @media (width <= 850px) {",
+		"    --padding: var(--p-xs, clamp(0.5rem, 2%, 0.75rem));",
+		"    }",
+		"}"
+	],
+	"description": "cssBody"
+},
+"cssPlanItem": {
+	"prefix": "planItem",
+	"body": [
+		".${1:plan} {",
+		"--_${1:shadow}: var(--${1:shadow}, black);",
+		"--_${2:icon}: var(--${2:icon}, black);,",
+		"--_${3:button-hover}: var(--${3:button-hover}, black);",
+		"}",
+		"",
+		".${1:plan}__${2:icon} {",
+		"  fill: var(--_${2:icon});",
+		"}",
+		"",
+		""
+	],
+	"description": "cssPlanItem"
+},
+
+
 }
+
