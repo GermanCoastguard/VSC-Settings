@@ -1,6 +1,6 @@
 {
-"cssClass": {
-	"prefix": ".",
+"newClass": {
+	"prefix": "newClass",
 	"body": [
 		".${1:example} {",
 		"${2:example}: ${3:example};",
@@ -67,7 +67,7 @@
 	],
 	"description": "cssBody"
 },
-"cssPlanItem": {
+"planItem": {
 	"prefix": "planItem",
 	"body": [
 		".${1:plan} {",
