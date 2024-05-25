@@ -35,6 +35,7 @@
             { "key": "alt+7", "command": "workbench.action.focusSeventhEditorGroup"},
             { "key": "alt+8", "command": "workbench.action.focusEighthEditorGroup"},
             { "key": "alt+9", "command": "workbench.action.focusNinthEditorGroup"},
+            
 
     //close
         // current tab
