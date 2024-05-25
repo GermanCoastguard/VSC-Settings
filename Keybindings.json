@@ -24,7 +24,9 @@
             { "key": "alt+1", "command": "workbench.action.focusFirstEditorGroup"},
             { "key": "alt+2", "command": "workbench.action.focusSecondEditorGroup"},
             { "key": "alt+3", "command": "workbench.action.focusThirdEditorGroup"},
-            { "key": "alt+4", "command": "workbench.action.focusFourthEditorGroup"},
+            // { "key": "alt+4", "command": "workbench.action.focusFourthEditorGroup"},
+            // alt + 4 ist raus, weil ich über switchVscWindowAutohotkey eine Funktion ausführe um :
+            // von z.B. (ich befinde mich in alt+1 , in alt + 4 soll automatisch alt+1 geöffnet werden )
             { "key": "alt+5", "command": "workbench.action.focusFifthEditorGroup"},
             { "key": "alt+6", "command": "workbench.action.focusSixthEditorGroup"},
             { "key": "alt+7", "command": "workbench.action.focusSeventhEditorGroup"},
