@@ -29,8 +29,9 @@
                 // von z.B. (ich befinde mich in alt+1 , in alt + 4 soll automatisch alt+1 geöffnet werden )
                 // windows.openFile("vscWindowSwap.ahk")
                     // ausgelöst von windows.openFile(starteCodingSession.bat)
-            { "key": "alt+5", "command": "workbench.action.focusFifthEditorGroup"},
-            { "key": "alt+6", "command": "workbench.action.focusSixthEditorGroup"},
+            { "key": "alt+5", "command": "workbench.action.focusFourthEditorGroup"},
+            { "key": "alt+6", "command": "workbench.action.focusFourthEditorGroup"},
+            // 5 und 6 mussten mit eingebunden werden (damit ctrl + g wie gewünscht ausgeführt werden kann.)
             { "key": "alt+7", "command": "workbench.action.focusSeventhEditorGroup"},
             { "key": "alt+8", "command": "workbench.action.focusEighthEditorGroup"},
             { "key": "alt+9", "command": "workbench.action.focusNinthEditorGroup"},
