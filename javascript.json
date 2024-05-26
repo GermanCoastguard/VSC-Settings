@@ -237,17 +237,15 @@
 		"});"
 	],
 	"description": "addEventListener"
-},
-"function": {
-	"prefix": "function",
+},"newFunction": {
+	"prefix": "newFunction",
 	"body": [
-		"function ${1:newFunction}() {",
-		"        const conditions = [];",
-		"        const facts = [];",
-		"",
-		"console.log(`${1:newFunction}() is Running`);",
+		"const ${1:newFunction} = (${2:}) => {",
+		"      const steps = [];",
+		"      const conditions = [];",
+		"      const facts = [];",
+		"      console.log(`${1:newFunction}() is Running`);",
 		"}",
-		"",
 		"${1:newFunction}();"
 	],
 	"description": "newFunction"
@@ -259,8 +257,8 @@
 // 	],
 // 	"description": "utilityFunction"
 // },
-"newFunction": {
-	"prefix": "newFunction",
+"newFunctionCompare": {
+	"prefix": "newFunctionCompare",
 	"body": [
 		"function ${1:newFunction}(A, B) {",
 		"        console.log(`${1:newFunction}() start`);",
@@ -308,5 +306,12 @@
 },
 "map": {
 	
+},
+"newAhk": {
+	"prefix": "newAhk",
+	"body": [
+		"const ${1:ahkTitel} = new Ahk(\"${1:ahkTitel}\", /* systemVorgabe z.B.*/ \"${2:win + 1}\", /* deineWunscheingabe z.B.*/ \"${3:alt + c + 1}\", ${4:[\"brauchst du diesen hotKey häufiger ? wenn nein, drücke  Entfernen. tab, entfernen, wenn ja, lies dir diesen Satz zuende durch und führe die anweisung aus  => drücke entfernen, drücke tab => liste sie anschließend in einem array auf} [${5:\"case [0]\"}], {isLoop: ${7:false}, isTimeout: ${8:false}, hasLoop: ${9:false}, hasTimeout: ${10:false},});"
+	],
+	"description": "newAhk"
 },
 }
