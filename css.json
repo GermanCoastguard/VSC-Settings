@@ -112,6 +112,18 @@
 	],
 	"description": "centerRel"
 },
+"hypCss": {
+	"prefix": "hypCss",
+	"body": [
+		"            --_a:${1:your a value} ;",
+		"            --_b:${2:your b value} ;",
+		"            --_aSquare: calc(var(--_a) * var(--_a));",
+		"            --_bSquare: calc(var(--_b) * var(--_b));",
+		"            --_cSquare: calc(var(--_aSquare) + var(--_bSquare));",
+		"            --c: calc(sqrt(var(--_cSquare)));"
+	],
+	"description": "hypCss"
+},
 
 }
 
