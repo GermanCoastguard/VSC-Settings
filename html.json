@@ -1,0 +1,18 @@
+{
+"testElement": {
+	"prefix": "testElement",
+	"body": [
+		"      <test id=\"test\" class=\"${1:example}\" style=\" min-width: 300px; min-height: 300px; border: 3px solid black; position: absolute; top: 50%; left: 50%;transform: translate(-50%, -50%);\">",
+		"            <h4>#test</h4>",
+		"            <div class=\"test-width\"> Width = <span class=\"width-display\">Test - N/A </span> </div>",
+		"            <div class=\"test-height\"> height = <span class=\"height-display\">Test - N/A </span> </div>",
+		"",
+		"                  <div> 1 </div>",
+		"                  <div> 2 </div>",
+		"                  <div> 3 </div>",
+		"      </test>",
+		""
+	],
+	"description": "testElement"
+},
+}
