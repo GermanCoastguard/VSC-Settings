@@ -120,10 +120,54 @@
 		"            --_aSquare: calc(var(--_a) * var(--_a));",
 		"            --_bSquare: calc(var(--_b) * var(--_b));",
 		"            --_cSquare: calc(var(--_aSquare) + var(--_bSquare));",
-		"            --c: calc(sqrt(var(--_cSquare)));"
+		"            --_c: calc(sqrt(var(--_cSquare)));"
 	],
 	"description": "hypCss"
 },
-
+"clipPath3": {
+	"prefix": "clip-path-3",
+	"body": [
+		"clip-path: polygon(",
+		"${1:50}${7:%} ${2:0}${7:%},",
+		"${3:0}${7:%} ${4:100}${7:%},",
+		"${5:0}${7:%} ${6:100}${7:%}",
+		")",
+		";",
+		"",
+		""
+	],
+	"description": "clipPath"
+},
+"clipPath4": {
+	"prefix": "clip-path-4",
+	"body": [
+		"clip-path: polygon(",
+		"${1:50}${9:%} ${2:0}${9:%},",
+		"${3:0}${9:%} ${4:100}${9:%},",
+		"${5:0}${9:%} ${6:100}${9:%},",
+		"${7:0}${9:%} ${8:100}${9:%}",
+		")",
+		";",
+		"",
+		""
+	],
+	"description": "clipPath"
+},
+"clipPath5": {
+	"prefix": "clip-path-5",
+	"body": [
+		"clip-path: polygon(",
+		"${1:50}${11:%} ${2:0}${11:%},",
+		"${3:0}${11:%} ${4:100}${11:%},",
+		"${5:0}${11:%} ${6:100}${11:%},",
+		"${7:0}${11:%} ${8:100}${11:%},",
+		"${9:0}${11:%} ${10:100}${11:%}",
+		")",
+		";",
+		"",
+		""
+	],
+	"description": "clipPath"
+},
 }
 
