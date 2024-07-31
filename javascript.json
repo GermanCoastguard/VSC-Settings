@@ -47,13 +47,16 @@
 		"                <style>",
 		"",
 		"                :host {",
+		"                    display: block;",
 		"                    box-sizing: border-box;",
 		"                    ",
 		"                    font-size: var(--fs, inherit);",
 		"                    --fs: var(--_fs);",
-		"                    fill: var(--_fill, --fill);",
+		"                    color: var(--fc, inherit);",
+		"                    --fc: var(--_fc);",
+		"                    background-color: var(--bg, transparent);",
+		"                    --bg: var(--_bg);",
 		"",
-		"                    display: block;",
 		"                }",
 		"    ::slotted(YOUR-ELEMENT) {",
 		"       background-color: red !important;",
@@ -315,3 +318,4 @@
 	"description": "newAhk"
 },
 }
+
