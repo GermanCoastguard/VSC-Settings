@@ -169,5 +169,17 @@
 	],
 	"description": "clipPath"
 },
+"text-gradient": {
+	"prefix": "text-gradient",
+	"body": [
+		"      --gradient-from: ${1:black} ;",
+		"      --gradient-to: ${2:white};",
+		"      --linear-gradient: ${3:bottom};",
+		"      background: linear-gradient(to var(--linear-gradient, bottom), var(--gradient-from, green), var(--gradient-to, white));",
+		"      -webkit-background-clip: text;",
+		"      -webkit-text-fill-color: transparent;"
+	],
+	"description": "text-gradient"
+},
 }
 
