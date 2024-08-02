@@ -207,7 +207,7 @@
 		"}",
 		"",
 		".${1:class}:hover::webkit-scrollbar-thumb {",
-		"      visible",
+		"      visibility: visible;",
 		"}"
 	],
 	"description": "CSS-Scrollbar"
