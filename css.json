@@ -207,10 +207,17 @@
 		"}",
 		"",
 		".${1:class}:hover::webkit-scrollbar-thumb {",
-		"      visibility: visible;",
+		"       visibility: visible; ",
 		"}"
 	],
 	"description": "CSS-Scrollbar"
+},
+"CSS-Image": {
+	"prefix": "image",
+	"body": [
+		"background: url(${1:/assets/images/infinity-loop.jpg}) center / cover;"
+	],
+	"description": "CSS-Image"
 },
 }
 
