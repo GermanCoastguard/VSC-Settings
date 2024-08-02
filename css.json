@@ -181,5 +181,36 @@
 	],
 	"description": "text-gradient"
 },
+"cssEllipsis": {
+	"prefix": "ellipsis",
+	"body": [
+		"                        display: -webkit-box;",
+		"                        -webkit-box-orient: vertical;",
+		"                        -webkit-line-clamp: 1;",
+		"                        overflow: hidden;",
+		"                        text-overflow: ellipsis;"
+	],
+	"description": "cssEllipsis"
+},
+"CSS-Scrollbar": {
+	"prefix": "scrollbarcss",
+	"body": [
+		".${1:class}::webkit-scrollbar {",
+		"      width: 0.5rem;",
+		"      height: 0.5rem;",
+		"}",
+		"",
+		".${1:class}::webkit-scrollbar-thumb {",
+		"      border-radius: .5rem;",
+		"      background-color: #0004;",
+		"      visibility: hidden;",
+		"}",
+		"",
+		".${1:class}:hover::webkit-scrollbar-thumb {",
+		"      visible",
+		"}"
+	],
+	"description": "CSS-Scrollbar"
+},
 }
 
