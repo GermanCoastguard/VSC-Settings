@@ -219,5 +219,67 @@
 	],
 	"description": "CSS-Image"
 },
+"cssContainerQueryTemp": {
+	"prefix": "container",
+	"body": [
+		".container {",
+		"      container: var(--container,) / inline-size;",
+		"      display: block;",
+		"      grid-area: var(--grid-area);",
+		"      grid-column: var(--grid-column);",
+		"      grid-row: var(--grid-row);",
+		"}"
+	],
+	"description": "cssContainerQueryTemp"
+},
+"farbpalette": {
+	"prefix": "colors",
+	"body": [
+		"                  /* Purple */",
+		"                  color: hsl(270, 50%, 36%); /* Deep   / Dark   */",
+		"                  color: hsl(270, 50%, 40%); /* Base   / Medium */",
+		"                  color: hsl(270, 51%, 46%); /* Bright / Light  */",
+		"",
+		"                  /* Sy3be4 */",
+		"                  color: hsl(197, 71%, 73%); /* Deep   / Dark   */",
+		"                  color: hsl(201, 100%, 79%); /* Base   / Medium */",
+		"                  color: hsl(206, 100%, 79%); /* Bright / Light  */",
+		"                  ",
+		"                  /*Taubenblau */",
+		"                  color: hsl(211, 45%, 41%); /* Deep   / Dark   */",
+		"                  color: hsl(211, 47%, 51%); /* Base   / Medium */",
+		"                  color: hsl(211, 71%, 61%); /* Bright / Light  */",
+		"                  ",
+		"                  /* Green */",
+		"                  color: hsl(121, 82%, 36%); /* Deep   / Dark   */   /* booleaner --secondary */",
+		"                  color: hsl(121, 82%, 44%); /* Base   / Medium */ ",
+		"                  color: hsl(121, 91%, 52%); /* Bright / Light  */",
+		"",
+		"                  /* Orange */",
+		"                  color: hsl(28, 66%, 47%); /* Deep   / Dark   */   /* booleaner --primary */",
+		"                  color: hsl(28, 86%, 56%); /* Base   / Medium */ ",
+		"                  color: hsl(31, 100%, 60%); /* Bright / Light  */",
+		"",
+		"                  /* Red */",
+		"                  color: hsl(0, 100%, 25%); /* Deep   / Dark   */",
+		"                  color: hsl(0, 100%, 40%); /* Base   / Medium */",
+		"                  color: hsl(0, 100%, 50%); /* Bright / Light  */"
+	],
+	"description": "farbpalette"
+},
+"clrTest": {
+	"prefix": "colortest",
+	"body": [
+		"color: hsl(211, 45%, 41%);"
+	],
+	"description": "clrTest"
+},
+"bgclrTest": {
+	"prefix": "bgcolortest",
+	"body": [
+		"color: hsl(211, 45%, 41%);"
+	],
+	"description": "bgclrTest"
+},
 }
 
