@@ -1,5 +1,11 @@
 // Place your key bindings in this file to override the defaults
 // Tabs
+
+// in VSC => 
+    // ctrl + shift + p
+    // preferences open keyboard shortcuts (json)
+        // paste following code 
+
 [
     //open searchbar to create tab
 //  { key : "ctrl+p", }
