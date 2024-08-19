@@ -1,3 +1,11 @@
+// in VSC 
+// ctrl + shift + p
+// snippets: configure snippets
+// enter
+// javascript
+// enter
+// paste following Code :
+
 {
 "JSWebComponent": {
 	"prefix": "webC",
