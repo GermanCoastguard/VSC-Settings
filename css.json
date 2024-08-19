@@ -1,3 +1,11 @@
+// in VSC 
+// ctrl + shift + p
+// snippets: configure snippets
+// enter
+// css
+// enter
+// paste following Code :
+
 {
 "newClass": {
 	"prefix": "newClass",
