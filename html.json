@@ -1,3 +1,11 @@
+// in VSC 
+// ctrl + shift + p
+// snippets: configure snippets
+// enter
+// html
+// enter
+// paste following Code :
+
 {
 "testElement": {
 	"prefix": "testElement",
