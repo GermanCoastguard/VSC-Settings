@@ -5,7 +5,6 @@
 // javascript
 // enter
 // paste following Code :
-
 {
 // "JSWebComponent": {
 // 	"prefix": "webC",
@@ -160,7 +159,7 @@
 		"}",
 		"// This Block Creates your Component , which will be appended to \"body ( by default\") END ",
 		"",
-		"class ClassName extends HTMLElement {",
+		"class ${1:ClassName} extends HTMLElement {",
 		"    /* Lösche alle [test-display] Kommentare (einschließlich diesem) Sobald die Component fertig ist, bzw            ",
 		"        sobald die Werte nicht mehr kontrolliert werden müssen          ",
 		"    */",
