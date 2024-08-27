@@ -479,5 +479,22 @@
 	],
 	"description": "ClipPathBorder"
 },
+"Farbpalette-linux": {
+	"prefix": "colors-linux",
+	"body": [
+		"                       /* Linux  */",
+		"                        --cta-text: #ffa12f;",
+		"                        --cta-icon: #85a8e1 ;",
+		"                        ",
+		"                        --text: #d6d6d6;",
+		"                        --text-semi-headings: #4c9ac7;",
+		"                        ",
+		"                        --selection-text: #4dead0;",
+		"",
+		"                        --bg: hsl(200, 10%, 11%);"
+	],
+	"description": "Farbpalette-linux"
+},
+
 }
 
