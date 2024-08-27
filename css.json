@@ -230,7 +230,7 @@
 	"prefix": "container",
 	"body": [
 		".container {",
-		"      container: var(--container,) / inline-size;",
+		"      container: var(--container, container) / inline-size;",
 		"      display: block;",
 		"      grid-area: var(--grid-area);",
 		"      grid-column: var(--grid-column);",
