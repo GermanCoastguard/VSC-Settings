@@ -507,8 +507,9 @@
 	"prefix": "gridAutoFilTTTT",
 	"body": [
     "display: grid;",
+    "--grid-min-col-size: ${2:275px}",
     "grid-template-columns:",
-    "${1:/* MIN-Size = 275px , takes 100% if Parent <= 275px, ",
+    "${1:/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
     "MAX-Size = 1fr,",
     "*/}",
     "repeat(auto-fit, minmax(min(${2:275px}, 100%), 1fr));",
@@ -520,8 +521,9 @@
 	"prefix": "gridAutoFitlllLLLLL",
 	"body": [
     "display: grid;",
+    "--grid-min-col-size: ${2:275px}",
     "grid-template-columns:",
-    "${1:/* MIN-Size = 275px , takes 100% if Parent <= 275px, ",
+    "${1:/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
     "MAX-Size = 1fr,",
     "*/}",
     "repeat(auto-fill, minmax(min(${2:275px}, 100%), 1fr));",
