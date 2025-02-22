@@ -332,6 +332,7 @@
 "logString": {
 	"prefix": "cls",
 	"body": [
+		"console.clear();",
 		"console.log(`",
 		"  ",
 		"                ${1:example}",
@@ -519,5 +520,31 @@
 	],
 	"description": "newAhk"
 },
+"workingAsIntendedStart": {
+	"prefix": "waistart",
+	"body": [
+		"// __________________ Working as Intended Start __________________"
+	],
+	"description": "workingAsIntended"
+},
+"workingAsIntendedEnd": {
+	"prefix": "waiend",
+	"body": [
+		"// __________________ Working as Intended End __________________"
+	],
+	"description": "workingAsIntended"
+},
+"arrSnippet": {
+	"prefix": "arr",
+	"body": [
+		"const ${1:myArr} = [/*${2: Wozu dient dieser Array ?}*/",
+		"\"${3:firstValue}\",",
+		"]",
+		"",
+		""
+	],
+	"description": "arrSnippet"
+},
+
 }
 
