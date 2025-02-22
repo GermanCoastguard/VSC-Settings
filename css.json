@@ -16,7 +16,17 @@
 	"description": "cssClass"
 },
 "targetPreviousSiblings": {
-	"prefix": "previousSiblings",
+	"prefix": "siblingsPrevious",
+	"body": [
+		"// target previous Siblings + target ",
+		"${1:parent}:has(${3::hover}) * > :not(${2:target}${3::hover} ~ ${2:target}) {",
+		"    ${4:background-color}: ${5:hsla(0, 0%, 27%, 1)};",
+		"}"
+	],
+	"description": "targetPreviousSiblings"
+},
+"targetPreviousSiblingss": {
+	"prefix": "targetPreviousSiblings",
 	"body": [
 		"// target previous Siblings + target ",
 		"${1:parent}:has(${3::hover}) * > :not(${2:target}${3::hover} ~ ${2:target}) {",
@@ -507,12 +517,12 @@
 	"prefix": "gridAutoFilTTTT",
 	"body": [
     "display: grid;",
-    "--grid-min-col-size: ${2:275px}",
+    "--grid-min-col-size: ${1:125px};",
     "grid-template-columns:",
-    "${1:/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
+    "/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
     "MAX-Size = 1fr,",
-    "*/}",
-    "repeat(auto-fit, minmax(min(${2:275px}, 100%), 1fr));",
+    "*/",
+    "repeat(auto-fit, minmax(min(var(--grid-min-col-size, 275px), 100%), 1fr));",
 		""
 	],
 	"description": "gridAutoFit"
@@ -521,15 +531,75 @@
 	"prefix": "gridAutoFitlllLLLLL",
 	"body": [
     "display: grid;",
-    "--grid-min-col-size: ${2:275px}",
+    "--grid-min-col-size: ${1:125px};",
     "grid-template-columns:",
-    "${1:/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
+    "/* MIN-Size = --grid-min-col-size , takes 100% if Parent <= 275px, ",
     "MAX-Size = 1fr,",
-    "*/}",
-    "repeat(auto-fill, minmax(min(${2:275px}, 100%), 1fr));",
+    "*/",
+"repeat(auto-fit, minmax(min(var(--grid-min-col-size, 275px), 100%), 1fr));",
 		""
 	],
 	"description": "gridAutoFill"
+},"cssTargetParent": {
+	"prefix": "targetParent",
+	"body": [
+		"*:has(> ${1:.your-element}) {",
+		"   ${2:/* Parent ist jetzt anvisiert */}",
+		"      background: hsl(0, 0%, 18%, 0.5) !important;",
+		"      outline: 1px solid rebeccapurple;",
+		"",
+		"      & ${1:.your-element} {",
+		"           ${2:/* target ist jetzt anvisiert */}",
+		"            outline: 1px solid skyblue;",
+		"",
+		"            & * {",
+		"                ${2:/* alles innerhalb vom target wird anvisiert */}",
+		"                  outline: 1px solid green;",
+		"            }",
+		"      }",
+		"}"
+	],
+	"description": "cssDebug"
+},"cssDebug": {
+	"prefix": "debug",
+	"body": [
+		"*:has(> ${1:.your-element}) {",
+		"   ${2:/* Parent ist jetzt anvisiert */}",
+		"      background: hsl(0, 0%, 18%, 0.5) !important;",
+		"      outline: 1px solid rebeccapurple;",
+		"",
+		"      & ${1:.your-element} {",
+		"           ${2:/* target ist jetzt anvisiert */}",
+		"            outline: 1px solid skyblue;",
+		"",
+		"            & * {",
+		"                ${2:/* alles innerhalb vom target wird anvisiert */}",
+		"                  outline: 1px solid green;",
+		"            }",
+		"      }",
+		"}"
+	],
+	"description": "cssDebug"
+},"cssTest": {
+	"prefix": "test",
+	"body": [
+		"*:has(> ${1:.your-element}) {",
+		"   ${2:/* Parent ist jetzt anvisiert */}",
+		"      background: hsl(0, 0%, 18%, 0.5) !important;",
+		"      outline: 1px solid rebeccapurple;",
+		"",
+		"      & ${1:.your-element} {",
+		"           ${2:/* target ist jetzt anvisiert */}",
+		"            outline: 1px solid skyblue;",
+		"",
+		"            & * {",
+		"                ${2:/* alles innerhalb vom target wird anvisiert */}",
+		"                  outline: 1px solid green;",
+		"            }",
+		"      }",
+		"}"
+	],
+	"description": "cssDebug"
 },
 
 
