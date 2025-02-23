@@ -614,7 +614,7 @@
 		"            console.log(`",
 		"              Console was cleared => ",
 		"                            Ending debugging",
-		"            ",
+		"            `);",
 		"      }",
 		"}"
 	],
