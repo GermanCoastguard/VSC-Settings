@@ -611,11 +611,23 @@
 		"            }",
 		"            // __________________ Working as Intended End __________________",
 		"            handleRequirements();",
+		"            console.log(`",
+		"              Console was cleared => ",
+		"                            Ending debugging",
+		"            ",
 		"      }",
 		"}"
 	],
 	"description": "classTemplateForDebugging"
-},
+},"debug": {
+	"prefix": "debug",
+	"body": [
+		"console.clear();",
+		"this._debug();"
+	],
+	"description": "debug"
+}
+,
 
 }
 
